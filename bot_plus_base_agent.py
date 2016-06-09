@@ -9,7 +9,7 @@ lr_coefs_1 = joblib.load('lr_coefs_1')
 lr_free_coefs_1 = joblib.load('lr_free_coefs_1')
 
 def run_bbox():
-	f_35_penalty = 0.15; k = 0; w0 = 0.1
+	f_35_penalty = 0.15; k = 0; w0 = 0.13
 	bbox.load_level("levels/test_level.data", verbose=0)
 	has_next = True; last_score = 0
 	act = -1; act_len = 0; crit_len = 150
